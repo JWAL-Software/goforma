@@ -1,9 +1,8 @@
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './ProformaView.css';
 
 export function ProformaView() {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
 
   // Placeholder data - will be replaced with actual data fetching
   const proforma = {
